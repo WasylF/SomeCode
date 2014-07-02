@@ -132,7 +132,7 @@ class SegmentTree
 
     T value(int i)//+
     {// return value of element with index i
-       if (i>=nMax) return NULL; //incorrect value
+       if (i>=nMax) return T(); //incorrect value
         return a[nMax+i];
     }
 
