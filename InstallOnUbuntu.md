@@ -29,16 +29,16 @@
   
   5. update-alternatives
 
-    `sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/java/jdk1.8.0_111/bin/java" 1`
-    `sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/java/jdk1.8.0_111/bin/javac" 1`
-    `sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/java/jdk1.8.0_111/bin/javaws" 1`
+    sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/java/jdk1.8.0_111/bin/java" 1
+    sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/java/jdk1.8.0_111/bin/javac" 1
+    sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/java/jdk1.8.0_111/bin/javaws" 1
 
   
   6. open bashrc  `sudo gedit ~/.bashrc`
   7.  add lines
 
-    `export JAVA_HOME=/usr/lib/java/jdk1.8.0_111`
-    `export PATH="$PATH:$JAVA_HOME/bin"`
+    export JAVA_HOME=/usr/lib/java/jdk1.8.0_111
+    export PATH="$PATH:$JAVA_HOME/bin"
 
   8. save and exit
   
