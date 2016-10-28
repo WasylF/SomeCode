@@ -17,6 +17,7 @@
     sudo apt-get purge openjdk*
 
 **Install Oracle JDK8:**
+ 
  *Manually:*
   
   1. download from oracle website (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -55,6 +56,12 @@
 
 
 #IDEs
+**NetBeans**
+
+    sudo add-apt-repository ppa:vajdics/netbeans-installer
+    sudo apt update
+    sudo apt install netbeans-installer
+
 **CodeBlocks:**
 
     sudo add-apt-repository ppa:damien-moore/codeblocks-stable
