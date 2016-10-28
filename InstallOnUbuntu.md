@@ -77,12 +77,12 @@
 
  **Updating npm** 
 
-    `$ sudo npm install -g npm`
+    $ sudo npm install -g npm
 
  **Installin node-gyp**
 
-    `$ sudo npm install -g node-gyp`
-     `$ sudo npm install -g node-pre-gyp`
+    $ sudo npm install -g node-gyp
+    $ sudo npm install -g node-pre-gyp
 
 
 #Editors
@@ -92,6 +92,11 @@
     $ sudo apt update
     $ sudo apt install notepadqq
 
+**Sublime text**
+
+    $ sudo add-apt-repository ppa:webupd8team/sublime-text-3
+    $ sudo apt update
+    $ sudo apt install sublime-text-installer
 
 #Usefool tools
 **umake**
@@ -100,4 +105,13 @@
     $ sudo apt update
     $ sudo apt install ubuntu-make
 
+**Grub customizer**
+
+    $ sudo add-apt-repository ppa:danielrichter2007/grub-customizer 
+    $ sudo apt update 
+    $ sudo apt install grub-customizer
+
+**Vokoscreen** (Screencast recorder)
+
+    $ sudo apt-get install vokoscreen
 
