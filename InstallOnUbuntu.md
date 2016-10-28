@@ -18,35 +18,39 @@
 
 **Install Oracle JDK8:**
  *Manually:*
-  1) download from oracle website (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-  2) unzip `tar -zxvf jdk-8u111-linux-x64.tar.gz`
-  3) create java folder `sudo mkdir /usr/lib/java`
-  4) move downloaded java to created folder `sudo mv jdk.1.8.0_111 /usr/lib/java`
-  5) update-alternatives
-
-    sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/java/jdk1.8.0_111/bin/java" 1
-    sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/java/jdk1.8.0_111/bin/javac" 1
-    sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/java/jdk1.8.0_111/bin/javaws" 1
-
-  6) add JAVA_HOME to bashrc
-
-    sudo gedit ~/.bashrc
-
-  add lines
-	
-
-    export JAVA_HOME=/usr/lib/java/jdk1.8.0_111
-	export PATH="$PATH:$JAVA_HOME/bin"
-  save and exit
-  7) check installation `java -version`
-
- 
- *From PPA:*
   
+  1. download from oracle website (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+  
+  2. unzip `tar -zxvf jdk-8u111-linux-x64.tar.gz`
+  
+  3. create java folder `sudo mkdir /usr/lib/java`
+  
+  4. move downloaded java to created folder `sudo mv jdk.1.8.0_111 /usr/lib/java`
+  
+  5. update-alternatives
+
+    `sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/java/jdk1.8.0_111/bin/java" 1`
+    `sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/java/jdk1.8.0_111/bin/javac" 1`
+    `sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/java/jdk1.8.0_111/bin/javaws" 1`
+
+  
+  6. open bashrc  `sudo gedit ~/.bashrc`
+  7.  add lines
+
+    `export JAVA_HOME=/usr/lib/java/jdk1.8.0_111`
+    `export PATH="$PATH:$JAVA_HOME/bin"`
+
+  8. save and exit
+  
+  9. check installation `java -version`
+
+
+*From PPA:*  
 
     sudo add-apt-repository ppa:webupd8team/java
     sudo apt-get update
     sudo apt-get install oracle-java8-installer
+
 
 #IDEs
 **CodeBlocks:**
@@ -54,6 +58,7 @@
     sudo add-apt-repository ppa:damien-moore/codeblocks-stable
     sudo apt-get update
     sudo apt-get install codeblocks
+
 
 #Node.JS
 **Nnode.JS**
@@ -70,12 +75,15 @@
     sudo npm install -g node-gyp
     sudo npm install -g node-pre-gyp
 
+
 #Editors
 **Notepadqq** (analog Notepad++ for windows)
 
     sudo add-apt-repository ppa:notepadqq-team/notepadqq
     sudo apt-get update
     sudo apt-get install notepadqq
+
+
 
 
 
